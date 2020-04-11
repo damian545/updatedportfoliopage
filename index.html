@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- We need the following responsive meta tag to ensure things scale correctly across varying
+        devices. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Porfolio</title>
+
+    <!-- We need to bring in the bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- NavBar (copied and pasted from WC3) -->
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><p>Portfolio</p></a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+         
+          
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Contact Me
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Mobile 1234567890</a>
+              <a class="dropdown-item" href="#">Email@.com</a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          
+          
+        </form>
+      </div>
+    </nav>
+
+       <div class="container">
+      
+      <div class="row">
+       
+        <div class="col-lg-9">
+          <!-- The content in this div gets wrapped in a card -->
+          <div class="card">
+            <div class="card-body"> 
+            <h1>Damian Tapp</h1>
+            <style>
+              
+              body{
+                background-image:url("https://i.pinimg.com/originals/b3/8e/89/b38e8942b7389778a68795509d23baab.jpg");
+              }              
+              h1, h2 {
+                color: blue;
+              }
+              p {
+                color :orange;
+              }
+              h3 {
+                color :white;
+              }
+            </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail" src="https://www.abc.net.au/news/image/11193530-3x2-940x627.jpg" alt="Profile picture"/>
+        </div>
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <h3>
+            Hello, my name is Damian Tapp. I'm 45 years old and I'm trying to be a web designer.
+             I have no experience in this field as yet & I am currently
+            studying remotely with University of South Australia. I have a hand full of successful
+            activities I have done, a lot of them are not very successful!!  
+            My hobbies include Golf, Art, Photography, skateboarding and modified Cars. I built my drift car all by myself,
+            I taught myself to Skate and how to play Golf, I love art too. Whether it's street art
+            or something that captures my eye.
+          </h3>
+        </div>
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+          }
+          
+          /* Center website */
+          .main {
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          h1 {
+            font-size: 50px;
+            word-break: break-all;
+          }
+          
+          .row {
+            margin: 10px -16px;
+          }
+          
+          /* Add padding BETWEEN each column */
+          .row,
+          .row > .column {
+            padding: 8px;
+          }
+          
+          /* Create three equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+          }
+          
+          /* Clear floats after rows */ 
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Content */
+          .content {
+            background-color: white;
+            padding: 10px;
+          }
+          
+          /* The "show" class is added to the filtered elements */
+          .show {
+            display: block;
+          }
+          
+          /* Style the buttons */
+          .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+          }
+          
+          .btn:hover {
+            background-color: #ddd;
+          }
+          
+          .btn.active {
+            background-color: #666;
+            color: white;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <!-- MAIN (Center website) -->
+          <div class="main">
+          
+          <h1>DAMIAN-TAPP.COM</h1>
+          <hr>
+          
+          <h2>PORTFOLIO</h2>
+          
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('uni')"> UNI Projects</button>
+            <button class="btn" onclick="filterSelection('cars')"> Cars I've built</button>
+            <button class="btn" onclick="filterSelection('art')"> Art I like</button>
+            <button class="btn" onclick="filterSelection('hobbies')"> Hobbies I have</button>
+          </div>
+          
+          <!-- Portfolio Gallery Grid -->
+          <div class="row">
+            <div class="column uni projects">
+              <div class="content">
+                <img src="https://damian545.github.io/homework3/" alt="Password Generator" style="width:100%">
+                <h4>UNI Project</h4>
+                <p>Password Generator.</p>
+              </div>
+            </div>
+            <div class="column uni projects">
+              <div class="content">
+              <img src="https://damian545.github.io/dayPlanner/" alt="Day Planner Picture" style="width:100%">
+                <h4>UNI Project</h4>
+                <p>Day Planner.</p>
+              </div>
+            </div>
+            <div class="column uni projects">
+              <div class="content">
+              <img src="https://github.com/udara/after_one_of_Jupiter-s_moons.git" alt="Golf App Picture" style="width:100%">
+                <h4>UNI Project</h4>
+                <p>Team Project-Golf App.</p>
+              </div>
+            </div>              
+            
+            <div class="column cars i've built">
+              <div class="content">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/1969-1972_Holden_LC_Torana_GTR_sedan_01.jpg" alt="Car" style="width:100%">
+                <h4>My First Car</h4>
+                <p>First Car I built.</p>
+              </div>
+            </div>
+            <div class="column cars i've built">
+              <div class="content">
+                <img src="https://i.pinimg.com/originals/5a/62/e9/5a62e94551f014e3ac34a71751c89977.jpg" alt="Car" style="width:100%">
+                <h4>Drift Car</h4>
+                <p>First Drift Car I built.</p>
+              </div>
+            </div>
+            <div class="column cars i've built">
+              <div class="content">
+              <img src="https://sr20.driftworks.com/forum/attachments/image005-jpg.219362/" alt="Car" style="width:100%">
+                <h4>Drift Car</h4>
+                <p>Last Drift Car I built.</p>
+              </div>
+            </div>
+          
+            <div class="column art i like">
+              <div class="content">
+                <img src="https://streetpins.com/photos/smoe/smoe_9cd64d1efa3fb7e62736d846b9e253e3-800x382.jpg" alt="Art" style="width:100%">
+                <h4>Art I like</h4>
+                <p>Smoe Graffiti Artist.</p>
+              </div>
+            </div>
+            <div class="column art i like">
+              <div class="content">
+              <img src="https://i.ytimg.com/vi/O0qbmUfIr4U/maxresdefault.jpg" alt="Art" style="width:100%">
+                <h4>Art I like</h4>
+                <p>Greg Simkins Artist.</p>
+              </div>
+            </div>
+            <div class="column art i like">
+              <div class="content">
+              <img src="https://www.sandrapozun.com/f/pics/shop/Cevi_b.jpg" alt="Art" style="width:100%">
+                <h4>Art I like</h4>
+                <p>Photography Art.</p>
+              </div>
+            </div>
+
+            <div class="column art i like">
+              <div class="content">
+                <img src="https://cdn.pixabay.com/photo/2015/05/28/10/12/golf-787826__340.jpg" alt="Hobby" style="width:100%">
+                <h4>Hobby I do</h4>
+                <p>Golf every weekend.</p>
+              </div>
+            </div>
+            <div class="column art i like">
+              <div class="content">
+              <img src="https://live.staticflickr.com/3397/3298018693_ca44a9b438_b.jpg" alt="Hobby" style="width:100%">
+                <h4>Hobby I do</h4>
+                <p>Drawing/Doodling.</p>
+              </div>
+            </div>
+            <div class="column art i like">
+              <div class="content">
+              <img src="https://savoiragile.com/wp-content/uploads/2015/05/shutterstock_124738093.jpg" alt="Hobby" style="width:100%">
+                <h4>Hobby I do</h4>
+                <p>Photography with phone.</p>
+              </div>
+            </div>
+          <!-- END GRID -->
+          </div>
+          
+          <!-- END MAIN -->
+          </div>
+          
+          <script>
+          filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+              w3RemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+          }
+          
+          function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+          }
+          
+          function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+              }
+            }
+            element.className = arr1.join(" ");
+          }
+          
+          
+          // Add active class to the current button (highlight it)
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+            });
+          }
+          </script>
+      
+      
+     
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
