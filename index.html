@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <title>Porfolio</title>
+    <title>Updated Porfolio Page</title>
 
     <!-- We need to bring in the bootstrap CSS -->
     <link
@@ -58,6 +58,47 @@
               <div class="dropdown-divider"></div>
               
             </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+               
+                
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Things About Me
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                    <a class="dropdown-item" href="#"><div id="myBtnContainer">  
+                      
+                      <button class="btn" onclick="filterSelection('uni')"> UNI Homeworks</button>
+                    </div>
+                    </a>
+                    <a class="dropdown-item" href="#"><div id="myBtnContainer">            
+           
+                      <button class="btn" onclick="filterSelection('cars')"> Cars I've built</button>
+                    </div>
+                    </a>
+                    <a class="dropdown-item" href="#"><div id="myBtnContainer">  
+
+                      <button class="btn" onclick="filterSelection('art')"> Art I like</button>
+                    </div>
+                    </a>
+                    <a class="dropdown-item" href="#"><div id="myBtnContainer">            
+           
+                      <button class="btn" onclick="filterSelection('hobbies')"> Hobbies I have</button>
+                    </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    
+                  </div>
           </li>
           <li class="nav-item">
             
@@ -107,11 +148,11 @@
           <h3>
             Hello, my name is Damian Tapp. I'm 45 years old and I'm trying to be a web designer.
              I have no experience in this field as yet & I am currently
-            studying remotely with University of South Australia. I have a hand full of successful
+            studying remotely with University of South Australia. I have a handful of successful
             activities I have done, a lot of them are not very successful!!  
             My hobbies include Golf, Art, Photography, skateboarding and modified Cars. I built my drift car all by myself,
-            I taught myself to Skate and how to play Golf, I love art too. Whether it's street art
-            or something that captures my eye.
+            I taught myself to Skate and how to play Golf. I like art too, whether it's street art
+            or something <span style="color: black;">that captures</span> my eye.
           </h3>
         </div>
         <style>
@@ -190,110 +231,98 @@
           }
           </style>
           </head>
-          <body>
+          <body> 
           
-          <!-- MAIN (Center website) -->
-          <div class="main">
+             
           
-          <h1>DAMIAN-TAPP.COM</h1>
-          <hr>
           
-          <h2>PORTFOLIO</h2>
           
-          <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('uni')"> UNI Projects</button>
-            <button class="btn" onclick="filterSelection('cars')"> Cars I've built</button>
-            <button class="btn" onclick="filterSelection('art')"> Art I like</button>
-            <button class="btn" onclick="filterSelection('hobbies')"> Hobbies I have</button>
-          </div>
-          
-          <!-- Portfolio Gallery Grid -->
+         
           <div class="row">
             <div class="column uni projects">
-              <div class="content">
-                <img src="https://damian545.github.io/homework3/" alt="Password Generator" style="width:100%">
-                <h4>UNI Project</h4>
+              <div class="content"><p>Education.</p>
+                <a href ="https://damian545.github.io/homework3/" target ="_blank">UNI Homework</a>
+                
                 <p>Password Generator.</p>
               </div>
             </div>
             <div class="column uni projects">
-              <div class="content">
-              <img src="https://damian545.github.io/dayPlanner/" alt="Day Planner Picture" style="width:100%">
-                <h4>UNI Project</h4>
+              <div class="content"><p>Education.</p>
+              <a href ="https://damian545.github.io/dayPlanner/" target ="_blank">UNI Homework</a>
+                
                 <p>Day Planner.</p>
               </div>
             </div>
             <div class="column uni projects">
-              <div class="content">
-              <img src="https://github.com/udara/after_one_of_Jupiter-s_moons.git" alt="Golf App Picture" style="width:100%">
-                <h4>UNI Project</h4>
-                <p>Team Project-Golf App.</p>
+              <div class="content"><p>Education.</p>
+              <a href ="https://github.com/udara/after_one_of_Jupiter-s_moons.git" target ="_blank">UNI Project</a>
+                
+                <p>A Team Project-Golf App.</p>
               </div>
             </div>              
             
             <div class="column cars i've built">
-              <div class="content">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/1969-1972_Holden_LC_Torana_GTR_sedan_01.jpg" alt="Car" style="width:100%">
-                <h4>My First Car</h4>
+              <div class="content"><p>Interests.</p>
+              <a href ="https://upload.wikimedia.org/wikipedia/commons/b/bd/1969-1972_Holden_LC_Torana_GTR_sedan_01.jpg" target = "_blank">My First Car</a>
+                
                 <p>First Car I built.</p>
               </div>
             </div>
             <div class="column cars i've built">
-              <div class="content">
-                <img src="https://i.pinimg.com/originals/5a/62/e9/5a62e94551f014e3ac34a71751c89977.jpg" alt="Car" style="width:100%">
-                <h4>Drift Car</h4>
+              <div class="content"><p>Interests.</p>
+                <a href ="https://i.pinimg.com/originals/5a/62/e9/5a62e94551f014e3ac34a71751c89977.jpg" target ="_blank">180Sx Drift Car</a>
+                
                 <p>First Drift Car I built.</p>
               </div>
             </div>
             <div class="column cars i've built">
-              <div class="content">
-              <img src="https://sr20.driftworks.com/forum/attachments/image005-jpg.219362/" alt="Car" style="width:100%">
-                <h4>Drift Car</h4>
+              <div class="content"><p>Interests.</p>
+              <a href ="https://sr20.driftworks.com/forum/attachments/image005-jpg.219362/" target = "_blank">R33 Skyline Drift Car</a>
+                
                 <p>Last Drift Car I built.</p>
               </div>
             </div>
           
             <div class="column art i like">
-              <div class="content">
-                <img src="https://streetpins.com/photos/smoe/smoe_9cd64d1efa3fb7e62736d846b9e253e3-800x382.jpg" alt="Art" style="width:100%">
-                <h4>Art I like</h4>
+              <div class="content"><p>Likes.</p>
+                <a href ="https://streetpins.com/photos/smoe/smoe_9cd64d1efa3fb7e62736d846b9e253e3-800x382.jpg" target = "_blank">Art I like</a>
+                
                 <p>Smoe Graffiti Artist.</p>
               </div>
             </div>
             <div class="column art i like">
-              <div class="content">
-              <img src="https://i.ytimg.com/vi/O0qbmUfIr4U/maxresdefault.jpg" alt="Art" style="width:100%">
-                <h4>Art I like</h4>
+              <div class="content"><p>Likes.</p>
+              <a href ="https://i.ytimg.com/vi/O0qbmUfIr4U/maxresdefault.jpg" target = "_blank">Art I like</a>
+                
                 <p>Greg Simkins Artist.</p>
               </div>
             </div>
             <div class="column art i like">
-              <div class="content">
-              <img src="https://www.sandrapozun.com/f/pics/shop/Cevi_b.jpg" alt="Art" style="width:100%">
-                <h4>Art I like</h4>
+              <div class="content"><p>Likes.</p>
+              <a href ="https://www.sandrapozun.com/f/pics/shop/Cevi_b.jpg" target = "_blank">Art I like</a>
+                
                 <p>Photography Art.</p>
               </div>
             </div>
 
-            <div class="column art i like">
-              <div class="content">
-                <img src="https://cdn.pixabay.com/photo/2015/05/28/10/12/golf-787826__340.jpg" alt="Hobby" style="width:100%">
-                <h4>Hobby I do</h4>
+            <div class="column hobbies i have">
+              <div class="content"><p>Hobby.</p>
+                <a href ="https://cdn.pixabay.com/photo/2015/05/28/10/12/golf-787826__340.jpg" target = "_blank">Hobby I do</a>
+                
                 <p>Golf every weekend.</p>
               </div>
             </div>
-            <div class="column art i like">
-              <div class="content">
-              <img src="https://live.staticflickr.com/3397/3298018693_ca44a9b438_b.jpg" alt="Hobby" style="width:100%">
-                <h4>Hobby I do</h4>
+            <div class="column hobbies i have">
+              <div class="content"><p>Hobby.</p>
+              <a href ="https://live.staticflickr.com/3397/3298018693_ca44a9b438_b.jpg" target = "_blank">Hobby I do</a>
+                
                 <p>Drawing/Doodling.</p>
               </div>
             </div>
-            <div class="column art i like">
-              <div class="content">
-              <img src="https://savoiragile.com/wp-content/uploads/2015/05/shutterstock_124738093.jpg" alt="Hobby" style="width:100%">
-                <h4>Hobby I do</h4>
+            <div class="column hobbies i have">
+              <div class="content"><p>Hobby</p>
+              <a href ="https://savoiragile.com/wp-content/uploads/2015/05/shutterstock_124738093.jpg" target = "_blank">Hobby I do</a>
+             
                 <p>Photography with phone.</p>
               </div>
             </div>
